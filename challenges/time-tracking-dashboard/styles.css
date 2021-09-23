@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* color: white; */
+}
+
+.wrapper {
+  width: 80%;
+  /* background-color: white; */
+  /* border: 1px solid white; */
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .user {
+  height: 100%;
+  width: 24%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+
+.user .userinfo {
+  height: 60%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.user .userinfo img {
+  width: 40%;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.user .userinfo p {
+  color: white;
+  position: relative;
+  top: 50px;
+  /* line-height: 1.2; */
+}
+
+.user .userinfo span {
+  font-size: 4vw;
+  font-weight: lighter;
+}
+
+.user .menu ul {
+  list-style-type: none;
+  padding: 30px;
+}
+
+.user .menu ul li a {
+  display: block;
+  color: hsl(235, 45%, 61%);
+  padding: 8px 16px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.user .menu ul li a:hover {
+  color: white;
+}
+
+/* Content Style */
+
+.wrapper .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 100%;
+  /* background-color: green; */
+}
+
+.wrapper .content .card {
+  width: 31%;
+  /* background: hsl(235, 46%, 20%); */
+  height: 47%;
+  border-radius: 15px;
+  color: white;
+}
+
+.card .head {
+  width: 100%;
+  height: 15%;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.card .track {
+  width: 100%;
+  height: 85%;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.card .track .title{
+  padding: 30px;
+  display: flex
+}
+
+.track-content{
+  padding-left: 30px;
+}
+
+
+.track-content .content-value{
+  /* font-size: 4vw; */
+  font-weight: 500;
+  font-size: 7vh;
+  font-weight: lighter;
+  padding-bottom: 10px;
+
+}
+
+.temps{
+  font-size: 1vw;
+}
+
+.value {
+  width: 85%;
+  font-size: 18px;
+
+}
+
+.card-1 .head {
+  background-image: url("./images/icon-work.svg");
+}
+
+.card-2 .head {
+  background-image: url("./images/icon-play.svg");
+}
+.card-3 .head {
+  background-image: url("./images/icon-study.svg");
+}
+
+.card-4 .head {
+  background-image: url("./images/icon-exercise.svg");
+}
+
+.card-5 .head {
+  background-image: url("./images/icon-social.svg");
+}
+.card-6 .head {
+  background-image: url("./images/icon-self-care.svg");
+}
+
+.card-1 {
+  background-color: hsl(15, 100%, 70%);
+}
+.card-2 {
+  background-color: hsl(195, 74%, 62%);
+}
+.card-3 {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.card-4 {
+  background-color: hsl(145, 58%, 55%);
+}
+.card-5 {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.card-6 {
+  background-color: hsl(43, 84%, 65%);
+}
