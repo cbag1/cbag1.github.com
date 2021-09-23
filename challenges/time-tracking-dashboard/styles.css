@@ -66,8 +66,7 @@ body {
   color: hsl(235, 45%, 61%);
   padding: 8px 16px;
   text-decoration: none;
-  /* line-height: 1.5; */
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 .user .menu ul li a:hover {
