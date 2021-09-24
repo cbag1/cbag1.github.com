@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <div class="user">
+      <div class="userinfo">
+        <img src="./images/image-jeremy.png" alt="">
+        <p>
+          Report for <br>
+          <span>Jeremy Robson</span>
+        </p>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="getDataDaily()" href="javascript:void(0);">Daily</a>
+          </li>
+          <li>
+            <a onclick="getDataWeekly()" href="javascript:void(0);">Weekly</a>
+          </li>
+          <li>
+            <a onclick="getDataMonthly()" href="javascript:void(0);">Monthly</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card card-1">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Work</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="work-value" >
+              32hrs
+            </div>
+            <div class="temps" id="work-previous">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-2">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Play</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="play-value" >
+              32hrs
+            </div>
+            <div class="temps" id="play-previous">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-3">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Study</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="study-value" >
+              32hrs
+            </div>
+            <div class="temps" id="study-previous" >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-4">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Exercise</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="exercise-value" >
+              32hrs
+            </div>
+            <div class="temps" id="exercise-previous" >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-5">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Social</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="social-value" >
+              32hrs
+            </div>
+            <div class="temps" id="social-previous" >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-6">
+        <div class="head">
+        </div>
+        <div class="track">
+          <div class="title">
+            <div class="value">Self Care</div>
+            <div class="icone">
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="content-value" id="self-value" >
+              32hrs
+            </div>
+            <div class="temps" id="self-previous">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+</html>
