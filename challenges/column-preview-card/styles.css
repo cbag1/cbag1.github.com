@@ -14,8 +14,8 @@ body {
 
 .wrapper {
   position: absolute;
-  width: 70%;
-  height: 75%;
+  width: 65%;
+  height: 70%;
   top: 0;
   left: 0;
   margin: auto;
@@ -33,12 +33,23 @@ body {
   background-color: hsl(31, 77%, 52%);
 }
 
+.card-1 a {
+  color: hsl(31, 77%, 52%);
+}
+
 .card-2 {
   background-color: hsl(184, 100%, 22%);
 }
 
+.card-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
 .card-3 {
   background-color: hsl(179, 100%, 13%);
+}
+.card-3 a {
+  color: hsl(179, 100%, 13%);
 }
 
 h1 {
@@ -54,7 +65,22 @@ img {
   margin-bottom: 4vh;
 }
 
-p{
-    color: white;
-    font-family: 'Lexend Deca', sans-serif;
+p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 3.5vh;
+}
+
+a {
+  text-decoration: none;
+  background-color: white;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 2vh;
+  font-size: 15px;
+  padding-bottom: 2vh;
+  position: relative;
+  bottom: -12vh;
+  border-radius: 30px;
+  font-family: "Lexend Deca", sans-serif;
 }
