@@ -85,18 +85,35 @@ a {
   font-family: "Lexend Deca", sans-serif;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    font-size: 12px;
+  }
 
-@media screen and (max-width: 375px){
-  
   .wrapper {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    top: 55px;
   }
 
   .wrapper .card {
-    /* background-color: white; */
-    padding: 4vw;
+    height: 50vh;
+    padding: 8vh;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: white;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    /* padding-top: 2vh; */
+    font-size: 12px;
+   
+    bottom: -7vh;
+    border-radius: 30px;
+    font-family: "Lexend Deca", sans-serif;
   }
 }
