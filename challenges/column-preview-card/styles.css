@@ -84,3 +84,19 @@ a {
   border-radius: 30px;
   font-family: "Lexend Deca", sans-serif;
 }
+
+
+@media screen and (max-width: 375px){
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .wrapper .card {
+    /* background-color: white; */
+    padding: 4vw;
+  }
+}
