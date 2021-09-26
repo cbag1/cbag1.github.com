@@ -11,19 +11,37 @@ body {
   /* background-size: cover; */
   /* background-position-x: top left; */
   display: flex;
-  width: 100vw;
-  height: 100vh;
+ 
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  color: hsl(225, 20%, 60%);
 }
 
 .wrapper {
   width: 35vw;
   height: 80vh;
-  background-color: red;
+  /* background-color: red; */
+  border: 1px solid black;
 }
 
 .wrapper .entete {
   height: 30%;
-  background-color: green;
+  background: url("./images/pattern-circles.svg") no-repeat center;
+  /* padding: 60px; */
+  padding-top: 7vh;
+  border: 1px solid black;
 }
+
+.wrapper .entete p {
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+}
+
+.wrapper .entete p span{
+    font-weight: 800;
+    font-size: 4.5vh;
+    color: hsl(227, 35%, 25%);
+}
+
