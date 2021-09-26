@@ -7,9 +7,10 @@
 }
 
 body {
-  /* background: url("./images/bg-pattern.svg") no-repeat; */
+  background: url("./images/bg-pattern.svg") no-repeat;
   /* background-size: cover; */
   /* background-position-x: top left; */
+  background-position: top;
   display: flex;
 
   justify-content: center;
