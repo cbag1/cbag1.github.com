@@ -50,7 +50,6 @@ body {
 .wrapper .contenu {
   height: 70%;
   border-radius: 5px;
-  box-shadow: inset;
   background-color: white;
   box-shadow: 0 .5px 2px -1px black;
 
