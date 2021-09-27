@@ -23,14 +23,14 @@ body {
   width: 37.8vw;
   height: 80vh;
   /* background-color: red; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .wrapper .entete {
   height: 30%;
   background: url("./images/pattern-circles.svg") no-repeat center;
   /* padding: 60px; */
-  padding-top: 5vh;
+  padding-top: 6vh;
   /* border: 1px solid black; */
 }
 
@@ -45,4 +45,13 @@ body {
   font-weight: 800;
   font-size: 4.1vh;
   color: hsl(227, 35%, 25%);
+}
+
+.wrapper .contenu {
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: inset;
+  background-color: white;
+  box-shadow: 0 .5px 2px -1px black;
+
 }
