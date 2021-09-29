@@ -8,9 +8,9 @@
 
 body {
   background: url("./images/bg-pattern.svg") no-repeat;
-  /* background-size: cover; */
+  background-size: contain;
   /* background-position-x: top left; */
-  background-position: top;
+  /* background-position: top; */
   display: flex;
 
   justify-content: center;
@@ -48,7 +48,7 @@ body {
 }
 
 .wrapper .contenu {
-  height: 70%;
+  height: auto;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 .5px 2px -1px black;
