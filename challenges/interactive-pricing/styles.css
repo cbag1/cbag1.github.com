@@ -8,6 +8,7 @@
 
 body {
   background: url("./images/bg-pattern.svg") no-repeat;
+  font-family: "Manrope", sans-serif;
   background-size: contain;
   /* background-position-x: top left; */
   /* background-position: top; */
@@ -36,7 +37,6 @@ body {
 
 .wrapper .entete p {
   text-align: center;
-  font-family: "Manrope", sans-serif;
   /* line-height: 1.8; */
   font-size: 16px;
 }
@@ -51,6 +51,44 @@ body {
   height: auto;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0 .5px 2px -1px black;
+  padding: 3em;
+  box-shadow: 0 0.5px 2px -1px black;
+}
 
+.valeur {
+  display: flex;
+  /* border: 1px solid black; */
+  
+}
+
+.valeur div {
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.valeur .pageviews {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.valeur .pageviews h4 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.valeur .months span {
+  font-weight: 800;
+  color: hsl(225, 20%, 60%);
+  position: relative;
+  font-size: 15px;
+  top: -20%;
+  /* transform: translateY(-50%); */
+}
+
+.valeur .months {
+  text-align: center;
+  font-size:3em;
+  color: rgb(41, 51, 86);
 }
