@@ -181,3 +181,15 @@ body {
   font-weight: 700;
   border-radius: 10px;
 }
+
+.offre {
+  display: flex;
+}
+
+.offre .offrevalue {
+  width: 50%;
+}
+
+.offre .offrevalue .check{
+  display: block;
+}
