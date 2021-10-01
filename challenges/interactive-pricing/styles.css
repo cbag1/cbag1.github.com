@@ -132,7 +132,8 @@ body {
   display: flex;
   width: 99%;
   justify-content: right;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 5em;
 }
 
 /* Checkbox Style  */
@@ -190,6 +191,28 @@ body {
   width: 50%;
 }
 
-.offre .offrevalue .check{
+.offre .offrevalue .check {
   display: block;
+  font-size: 0.9em;
+  line-height: 2;
+}
+
+.offre .start {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.offre  .start a{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(41, 51, 86);
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  font-size: .9em;
+
+
 }
