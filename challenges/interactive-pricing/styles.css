@@ -21,17 +21,18 @@ body {
 }
 
 .wrapper {
-  width: 37.8vw;
+  /* width: 37.8vw; */
   height: 80vh;
   /* background-color: red; */
   /* border: 1px solid black; */
 }
 
 .wrapper .entete {
-  height: 30%;
+  /* height: 30%; */
   background: url("./images/pattern-circles.svg") no-repeat center;
   /* padding: 60px; */
-  padding-top: 6vh;
+  padding-bottom: 6vh;
+  margin-bottom: 2vh;
   /* border: 1px solid black; */
 }
 
@@ -89,7 +90,7 @@ body {
 
 .valeur .months {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   color: rgb(41, 51, 86);
 }
 
