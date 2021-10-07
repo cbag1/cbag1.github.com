@@ -31,8 +31,8 @@ body {
   /* height: 30%; */
   background: url("./images/pattern-circles.svg") no-repeat center;
   /* padding: 60px; */
-  padding-bottom: 6vh;
-  margin-bottom: 2vh;
+  padding-bottom: 12vh;
+  /* margin-bottom: vh; */
   /* border: 1px solid black; */
 }
 
@@ -207,13 +207,89 @@ body {
   bottom: 0;
 }
 
-.offre  .start a{
+.offre .start a {
   text-decoration: none;
   color: white;
   background-color: rgb(41, 51, 86);
-  padding: 10px 30px 10px 30px;
-  border-radius: 20px;
-  font-size: .9em;
+  padding: 0.8em 1em 0.9em 0.9em;
+  border-radius: 1.1em;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 375px) {
+
+  .wrapper {
+    width: 90vw;
+    background-color: red;
+  }
+  .offre {
+    display: block;
+  }
+
+  .offre .offrevalue {
+    width: 100%;
+    text-align: center;
+  }
+
+  .offre .start {
+    width: 100%;
+    text-align: center;
+    top: 20px;
+  }
+  .offre .start a {
+    padding: 0.8em 3em 0.9em 3em;
+    border-radius: 1.1em;
+    font-size: 0.9em;
+  }
+
+  /* Mobile pour la partie Header Valeur(Pageviews, Months) */
+
+ 
+
+  .valeur {
+    display: block;
+    padding-bottom: 0;
+
+  }
+
+  .valeur div {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .valeur .pageviews {
+    text-align: center;
+    font-size: 1em;
+    /* padding-bottom: 0; */
+  }
+
+ 
+
+  .valeur .months span {
+    font-weight:bold;
+    color: hsl(225, 20%, 60%);
+    position: relative;
+    font-size: 15px;
+    top: -20%;
+    /* transform: translateY(-50%); */
+  }
+
+  .valeur .months {
+    position: absolute;
+    bottom: 275px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(41, 51, 86);
+  }
 
 
+  /* Partie Slider */
+
+  .slide-container {
+    width: 96%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
 }
