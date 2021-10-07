@@ -266,7 +266,7 @@ body {
  
 
   .valeur .months span {
-    font-weight:bold;
+    font-weight:950;
     color: hsl(225, 20%, 60%);
     position: relative;
     font-size: 15px;
@@ -276,11 +276,11 @@ body {
 
   .valeur .months {
     position: absolute;
-    bottom: 275px;
+    bottom: 220px;
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     color: rgb(41, 51, 86);
   }
 
@@ -288,8 +288,67 @@ body {
   /* Partie Slider */
 
   .slide-container {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
   }
+
+
+  /* Partie Promo */
+  .promo {
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+    /* justify-content: right; */
+    padding-top: 1em;
+    padding-bottom: 5em;
+  }
+
+
+/* Checkbox Style  */
+
+.promo #bill {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px hsl(223, 50%, 87%);
+  top: 50%;
+  transform: translateY(10%);
+}
+
+.promo #bill:checked {
+  background: hsl(174, 86%, 45%);
+}
+
+.promo #bill:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  border-radius: 20px;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+}
+
+.promo #bill:checked:before {
+  left: 25px;
+}
+
+.promo span {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  text-align: center;
+  font-size: 11px;
+  padding: 4px 4px;
+  font-weight: 700;
+  border-radius: 10px;
+}
 }
