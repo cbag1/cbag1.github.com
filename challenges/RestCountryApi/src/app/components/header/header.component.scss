@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 1px .1px .1px .1px;
+
+  div {
+    padding: 1em;
+  }
+
+  .text {
+    width: 90%;
+  }
+
+  .mode {
+    font-size: 15px;
+    width: 10%;
+    img {
+      width: 20px;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
