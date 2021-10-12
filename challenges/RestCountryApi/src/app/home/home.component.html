@@ -1,5 +1,14 @@
 <div class="wrapper">
   <div class="recherche">
-      Test
+
+   Partie Recherche
+
+  </div>
+  <div class="contenu" *ngIf="datas | async as donnees ">
+
+    <div class="card" *ngFor="let donnee of donnees">
+        {{ donnee.region }}
+    </div>
+
   </div>
 </div>

@@ -10,4 +10,7 @@ export class RestApiService {
   constructor(private http: HttpClient) { }
 
 
+  getCountry = this.http.get('https://restcountries.com/v3.1/all');
+
+
 }
