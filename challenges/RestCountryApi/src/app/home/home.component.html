@@ -1,13 +1,31 @@
 <div class="wrapper">
   <div class="recherche">
+    <div class="input-rech">
+      <!-- <img src="../../assets/images/search-outline.svg" alt=""> -->
+      <input type="text" name="search-input" id="search-input" [(ngModel)]="monpays">
+    </div>
 
-   Partie Recherche
+    <div class="select-rech">
+      <select name="select-pays" id="select-pays">
+        <option value="1">Test</option>
+      </select>
+    </div>
 
   </div>
+  <!-- Contenu -->
   <div class="contenu" *ngIf="datas | async as donnees ">
 
     <div class="card" *ngFor="let donnee of donnees">
-        {{ donnee.region }}
+      <div class="card-img">
+        <img [src]="donnee.flags.svg" [alt]="donnee.flag">
+      </div>
+      <div class="card-text">
+        <h2>{{ donnee.name.common }}</h2>
+        <h6> <span>Population :</span> {{ donnee.population }}</h6>
+        <h6> <span>Region :</span> {{ donnee.region }}</h6>
+        <h6> <span>Capital :</span> {{ donnee.capital }}</h6>
+
+      </div>
     </div>
 
   </div>

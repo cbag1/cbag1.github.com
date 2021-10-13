@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/theme/variables.css"
+              }
             ],
             "scripts": []
           },
@@ -88,7 +91,12 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -118,6 +126,30 @@
           "configurations": {
             "production": {
               "devServerTarget": "RestCountryApi:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "RestCountryApi:ionic-cordova-build",
+            "devServerTarget": "RestCountryApi:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "RestCountryApi:ionic-cordova-build:production",
+              "devServerTarget": "RestCountryApi:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "RestCountryApi:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "RestCountryApi:build:production"
             }
           }
         }

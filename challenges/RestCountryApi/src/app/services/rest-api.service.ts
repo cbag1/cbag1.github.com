@@ -12,5 +12,4 @@ export class RestApiService {
 
   getCountry = this.http.get('https://restcountries.com/v3.1/all');
 
-
 }
