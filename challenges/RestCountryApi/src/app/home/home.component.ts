@@ -19,6 +19,12 @@ export class HomeComponent implements OnInit {
   set monpays(value: string){
     this._monpays=value;
     console.log('Definition de mon pays');
+    // this.filteredPays= this.performFilter(value);
+  }
+
+  performFilter(filterBy: string){
+    filterBy= filterBy.toLocaleLowerCase();
+    // return this.datas.filter()
   }
 
   constructor(private serviceCountry: RestApiService) { }
@@ -32,7 +38,8 @@ export class HomeComponent implements OnInit {
     this.initcountry();
     this.datas=this.serviceCountry.getCountry;
     this._monpays="all";
-    // console.log(this)
+    // console.log(this.datas.subscribe(arg => this.filteredPays = arg));
+
 
   }
 
