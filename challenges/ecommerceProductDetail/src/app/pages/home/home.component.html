@@ -28,21 +28,13 @@
     <div class="contenu">
         <div class="imgshow">
             <div class="img">
-                <img src="../../../assets/img/image-product-1.jpg" alt="">
+                <a (click)="showModal()"><img [src]="imageshow" alt=""></a>
             </div>
             <div class="thumb">
-                <div class="imgthumb">
-                    <img src="../../../assets/img/image-product-1-thumbnail.jpg" alt="">
+                <div class="imgthumb" *ngFor="let t of thumbs; let index=index">
+                    <a (click)="changeImage(index)"> <img [src]="t" alt=""></a>
                 </div>
-                <div class="imgthumb">
-                    <img src="../../../assets/img/image-product-2-thumbnail.jpg" alt="">
-                </div>
-                <div class="imgthumb">
-                    <img src="../../../assets/img/image-product-3-thumbnail.jpg" alt="">
-                </div>
-                <div class="imgthumb">
-                    <img src="../../../assets/img/image-product-4-thumbnail.jpg" alt="">
-                </div>
+
             </div>
         </div>
         <div class="description">
@@ -70,6 +62,31 @@
                     <span>Add to cart </span>
 
                 </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox" *ngIf="ismodal" class="modal">
+        <div class="imgmodal">
+            <div class="imgshow">
+                <a (click)="closeModal()"> <img class="close" src="../../../assets/img/icon-close.svg" alt=""></a>
+                <div class="ishow">
+                    <div class="control">
+                        <a class="prev" (click)="changeIndex(0)"> <img src="../../../assets/img/icon-previous.svg"
+                                alt=""></a>
+                        <a class="next" (click)="changeIndex(1)"> <img src="../../../assets/img/icon-next.svg"
+                                alt=""></a>
+                    </div>
+                    <a (click)="showModal()"><img [src]="imageshow" alt=""></a>
+                </div>
+            </div>
+            <div class="sliderimg">
+                <div class="slid" *ngFor="let t of thumbs; let index=index">
+                    <a (click)="changeImage(index)"><img [src]="t" alt=""></a>
+                </div>
+
             </div>
         </div>
     </div>

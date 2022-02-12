@@ -45,7 +45,6 @@ nav a {
   padding: 1em;
   text-decoration: none;
   color: hsl(219, 9%, 45%);
-
 }
 
 nav .menu {
@@ -75,6 +74,7 @@ nav .menu {
 .imgshow .img {
   width: 100%;
   margin-bottom: 2em;
+  cursor: pointer;
   /* height: 1em; */
 }
 
@@ -88,6 +88,7 @@ nav .menu {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  cursor: pointer;
 }
 
 .imgshow .thumb .imgthumb {
@@ -178,5 +179,93 @@ nav .menu {
   text-decoration: line-through;
   font-size: 14px;
   color: hsl(219, 9%, 45%);
-  
+}
+
+/* Lightbox ! */
+
+
+
+.content .modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%, 75%);
+  /* opacity: ; */
+  z-index: 1;
+  /* padding-top: 100px; */
+  font-size: 12em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+}
+.content .modal .imgmodal {
+  width: 30%;
+  /* background-color: red; */
+}
+
+.content .modal .imgshow {
+  width: 100%;
+  text-align: right;
+}
+
+.content .modal .imgshow .close {
+  filter: invert(12%) sepia(63%) saturate(6234%) hue-rotate(246deg)
+    brightness(87%) contrast(156%);
+  text-align: right;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.content .modal .imgshow .ishow img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  /* align-items:baseline; */
+  width: 100%;
+  height: 100%;
+}
+
+.control a {
+  margin-top: 12em;
+  background: white;
+  padding: 10px;
+  border-radius: 40px 30px 30px 30px;
+}
+
+.next,
+.prev {
+  position: absolute;
+}
+.next {
+  margin-left: 27em;
+}
+
+.control img{
+  width: 10%;
+}
+
+.sliderimg {
+  width: 100%;
+  display: flex;
+  /* gap: 20px; */
+  padding: 30px 10px 0 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderimg .slid {
+  width: 100%;
+}
+
+.sliderimg .slid img {
+  width: 67%;
+  border-radius: 8px;
+
 }
